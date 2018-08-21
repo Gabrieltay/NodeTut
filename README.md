@@ -21,11 +21,12 @@ Expected result:
 ```
 
 ### Configuration
+Setting configuration for different environments. 
 ```sh
 $ npm i config
 $ vi config/default.json
 ```
-
+Default config directory resides in application root. Can be overridden by setting $NODE_CONFIG_DIR environment variable.
 ```json
 // default.json
 {
