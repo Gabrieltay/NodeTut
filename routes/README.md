@@ -8,7 +8,7 @@ $ npm i express
 
 **List Persons**
 ----
-  Returns json data about a single user.
+  Returns json data about all / a single user(s).
 
 * **URL**
 
@@ -57,20 +57,27 @@ $ npm i express
   * **Code:** 400 NOT FOUND <br />
     **Content:** `Invalid Person`
 
-  OR
-
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
-
 * **Sample Call:**
 
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
+  ```json
+    {
+        "name": "JohnDoe3",
+        "email": "johndoe@gmail.com",
+        "nric": "S8866557A",
+        "address": {
+          "street": "Tomorrowland",
+          "unit": "#01-200",
+          "postalCode": 100000
+        },
+        "siblings": [
+            {
+                "name": "John Bro",
+                "nric": "S1112223A"
+            },
+            {
+                "name": "John Sis",
+                "nric": "S9988774A"
+            }
+        ]
+    }
   ```
