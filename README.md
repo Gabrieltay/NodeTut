@@ -18,6 +18,6 @@ http://localhost:3000/
 Expected result:
 ```json
 {
-Message: "Hello World"
+    "Message": "Hello World"
 }
 ```
