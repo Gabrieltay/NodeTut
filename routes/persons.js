@@ -7,6 +7,7 @@ var ajv = new Ajv();
 
 const persons = [];
 
+// GET - sample URL: http://localhost:3000/api/persons/
 router.get('/', (req, res) => {
 	if (!Array.isArray(persons) || !persons.length) {
 		res.status(400).send('Invalid List');
@@ -15,6 +16,7 @@ router.get('/', (req, res) => {
 	}
 });
 
+// GET - sample URL: http://localhost:3000/api/persons/JohnDoe
 router.get('/:name', (req, res) => {
 	let person = persons.find(p => p.name === req.params.name);
 	if (!person) {
@@ -25,6 +27,7 @@ router.get('/:name', (req, res) => {
 	}
 });
 
+// DELETE - sample URL: http://localhost:3000/api/persons/JohnDoe
 router.delete('/:name', (req, res) => {
 	let person = persons.find(p => p.name === req.params.name);
 	if (!person) {
@@ -37,6 +40,7 @@ router.delete('/:name', (req, res) => {
 	}
 });
 
+// PUT - sample URL: http://localhost:3000/api/persons/JohnDoe
 router.put('/:name', (req, res) => {
 	let person = persons.find(p => p.name === req.params.name);
 	if (!person) {
@@ -48,6 +52,7 @@ router.put('/:name', (req, res) => {
 	}
 });
 
+// POST - sample URL: http://localhost:3000/api/persons/
 router.post('/', (req, res) => {
 	const valid = definitions.validate(req.body);
 	if (valid) {

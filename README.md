@@ -19,3 +19,17 @@ Expected result:
     "Message": "Hello World"
 }
 ```
+
+### Configuration
+
+
+**API Docs**
+----
+| Package | URL |
+| ------- | --- |
+| express | http://expressjs.com/en/4x/api.html |
+| ajv     | https://www.npmjs.com/package/ajv |
+| helmet  | https://www.npmjs.com/package/helmet |
+| debug   | https://www.npmjs.com/package/debug |
+| config  | https://www.npmjs.com/package/config |
+| morgan  | https://www.npmjs.com/package/morgan |

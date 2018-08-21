@@ -45,6 +45,7 @@ morgan.token('body', req => {
 	return JSON.stringify(req.body);
 });
 
+// exporting morgan logging as module
 module.exports.morgan = morgan(
 	':id :date[iso] :namespace :method :url :status :response-time :referrer :user-agent :body',
 	{
