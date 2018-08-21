@@ -1,5 +1,5 @@
 {
-	"instance-name": "Prod App",
+	"instance-name": "Stage App",
 	"enable-logging": false,
 	"log-path": "./share_logs",
 	"logfile": "access.log"

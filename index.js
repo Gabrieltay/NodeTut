@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('config');
 const helmet = require('helmet');
 const debug = require('debug')('app:index');
 const httpLogger = require('./middleware/httpLogger');
@@ -26,4 +27,4 @@ app.get('/', (req, res) => {
 
 // Configure express server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => debug(`Listening on port ${PORT}`));
+app.listen(PORT, () => debug(`Listening on port ${PORT} - ${config.get('instance-name')}`));

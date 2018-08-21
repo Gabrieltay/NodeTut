@@ -2,5 +2,10 @@
 	"instance-name": "Default App",
 	"enable-logging": true,
 	"log-path": "./logs",
-	"logfile": "access.log"
+	"logfile": "access.log",
+	"dbConfig": {
+		"host": "localhost",
+		"port": 1234,
+		"dbName": "businessdb"
+	}
 }

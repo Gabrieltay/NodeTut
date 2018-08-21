@@ -21,6 +21,47 @@ Expected result:
 ```
 
 ### Configuration
+```sh
+$ npm i config
+$ vi config/default.json
+```
+
+```json
+// default.json
+{
+	"instance-name": "Default App",
+	"enable-logging": true,
+	"log-path": "./logs",
+	"logfile": "access.log",
+	"dbConfig": {
+		"host": "localhost",
+		"port": 1234,
+		"dbName": "businessdb"
+	}
+}
+```
+
+Overriding configs for other environments
+```sh
+$ vi config/production.json
+```
+
+```json
+// production.json
+{
+	"instance-name": "Prod App",
+	"enable-logging": false,
+	"log-path": "./share_logs",
+	"logfile": "access.log"
+}
+```
+
+Toggle environments
+```sh
+$ export NODE_ENV=production
+$ node index.js
+```
+
 
 
 **API Docs**
