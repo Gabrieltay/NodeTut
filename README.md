@@ -62,7 +62,20 @@ $ export NODE_ENV=production
 $ node index.js
 ```
 
-
+### Debugging
+```sh
+$ npm i debug
+$ export DEBUG=app:*
+```
+```sh
+  app:worker:a Doing interesting stuffs... +0ms
+  app:worker:b Testing uninteresting things... +0ms
+  app:index Listening on port 3000 - Stage App +0ms
+  app:worker:a Doing interesting stuffs... +101ms
+  app:worker:a Doing interesting stuffs... +754ms
+  app:worker:a Doing interesting stuffs... +257ms
+  app:worker:b Testing uninteresting things... +2s
+```
 
 **API Docs**
 ----

@@ -25,6 +25,9 @@ app.get('/', (req, res) => {
 	});
 });
 
+// Activate background worker
+require('./controller/worker');
+
 // Configure express server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => debug(`Listening on port ${PORT} - ${config.get('instance-name')}`));
