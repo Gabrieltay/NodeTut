@@ -1,0 +1,6 @@
+{
+	"instance-name": "Dev App",
+	"enable-logging": true,
+	"log-path": "./logs",
+	"logfile": "access.log"
+}

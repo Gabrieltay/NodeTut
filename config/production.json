@@ -1,0 +1,6 @@
+{
+	"instance-name": "Prod App",
+	"enable-logging": false,
+	"log-path": "./logs",
+	"logfile": "access.log"
+}
