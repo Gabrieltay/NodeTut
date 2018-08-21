@@ -10,10 +10,8 @@ $ npm install -d
 $ node index
 ```
 
-Hit the server to see if its working
-```sh
-http://localhost:3000/
-```
+Hit the [server](http://localhost:3000/) to see if its working
+
 
 Expected result:
 ```json
