@@ -10,3 +10,14 @@ $ npm install -d
 $ node index
 ```
 
+Hit the server to see if its working
+```sh
+http://localhost:3000/
+```
+
+Expected result:
+```json
+{
+Message: "Hello World"
+}
+```
