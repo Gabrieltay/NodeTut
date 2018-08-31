@@ -10,4 +10,9 @@ services:
       - NODE_ENV=development
       - DEBUG=app:*
     ports:
-      - "8080:8080"  
+      - "8080:8080" 
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
