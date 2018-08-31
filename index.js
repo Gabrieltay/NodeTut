@@ -29,5 +29,5 @@ app.get('/', (req, res) => {
 require('./controller/worker');
 
 // Configure express server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => debug(`Listening on port ${PORT} - ${config.get('instance-name')}`));

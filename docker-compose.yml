@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: nodetut
+    container_name: nodetut_app
+    environment: 
+      - NODE_ENV=development
+      - DEBUG=app:*
+    ports:
+      - "8080:8080"  

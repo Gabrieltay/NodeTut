@@ -78,6 +78,11 @@ $ export DEBUG=app:*
   app:worker:b Testing uninteresting things... +2s
 ```
 
+To run as Docker image (default port: 8080)
+```docker
+docker-compose up -d
+```
+
 **API Docs**
 ----
 | Package | URL |
